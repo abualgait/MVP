@@ -1,7 +1,5 @@
 package com.aliesaassadi.androidmvp.ui.activity.details;
 
-import android.content.Intent;
-
 import com.aliesaassadi.androidmvp.data.movie.Movie;
 import com.aliesaassadi.androidmvp.ui.activity.base.BasePresenter;
 
@@ -17,9 +15,9 @@ public class DetailsPresenter extends BasePresenter<DetailsView> {
 
     public void onMovieReceived(Movie movie) {
         if (movie != null) {
-            view.showMovieDetails(movie);
+            baseview.showMovieDetails(movie);
         } else {
-            view.showDataUnavailableMessage();
+            baseview.showDataUnavailableMessage();
         }
     }
 }

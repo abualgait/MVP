@@ -24,7 +24,7 @@ public class MainPresenter extends BasePresenter<MainView> {
      * Network
      **/
     public void getAllMovie() {
-        movieRepository.getMovies(new MovieCallListener(view));
+        movieRepository.getMovies(new MovieCallListener(baseview));
     }
 
     /**
